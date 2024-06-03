@@ -1187,11 +1187,13 @@ ul.skills li.sk-wor { --per: 45; }
     z-index: 6;
     padding: 100px 100px;
     left: 0;
-    top: 0;
+    /* top: 0; */
     width: 100%;
-    height: 100%;
+    height: 110%;
     overflow: auto;
     background-color: rgba(0,0,0,0.9);
+    top: 65%;
+    transform: translateY(-50%);
 }
 .modal-content {
     position: relative;
@@ -1233,6 +1235,7 @@ ul.skills li.sk-wor { --per: 45; }
     width:100%;
     margin: auto;
     overflow: hidden;
+    
 }
 .imageslider img{
     width: 100%;
