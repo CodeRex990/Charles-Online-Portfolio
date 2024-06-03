@@ -505,7 +505,7 @@
 
 
 .skillmeter {
-	width: 60vw;
+	width: 90%;
 	margin-top: -130px;
 
 }
@@ -567,7 +567,7 @@
 }
 
 .skills2 {
-    display: none; 
+  display: none; 
 	background: white;
 }
 
@@ -649,6 +649,7 @@ ul.skills li:before {
     bottom: 0;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 ul.skills2 li {
@@ -941,7 +942,7 @@ ul.skills li.sk-wor { --per: 45; }
 
   .portfoliolink{
     box-sizing: border-box;
-    /* display: block; */
+    display: block;
 }
 .portfoliocontainer{
     margin-top: -50px;
