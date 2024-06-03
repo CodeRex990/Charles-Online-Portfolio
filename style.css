@@ -1270,9 +1270,9 @@ img.displaySlide{
     display: block;
     /* width: 70%; */
     object-fit: contain;
-    position: relative;
-    top: 45%;
-    transform: translateY(-50%);
+    /* position: relative;
+    top: 300%;
+    transform: translateY(-300%); */
 }
 
 
