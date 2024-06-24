@@ -261,3 +261,4 @@ function showAlert(message) {
         alertBox.classList.remove('show-alert');
     }, 1000);
 }
+

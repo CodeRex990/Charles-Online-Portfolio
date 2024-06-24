@@ -62,36 +62,49 @@
     height: 600%;
     width: 1400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a drop shadow */
-
+    display: flex;
+    flex-direction: column;
 }
 
 .portrait {
-    position: absolute;
+    /* position: absolute; */
     z-index: -1;
-    left: 690px;
-    top: -30px;
+    /* left: 690px; */
+    /* top: -30px; */
 }
 /* __________________________________HOME___________________________________________________________________ */
-/* .homelink{
-    margin-top: -50px;
-} */
-.homelink h1{
-    font-family: "Inter", sans-serif;
+.homelink{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.home-content{
+  display: flex;
+  flex-direction: row;
+}
+.home-text{
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  padding: 50px;
+}
+.hometext1{
     color: rgb(24, 94, 160) ;
-    margin-top: 66px;
-    padding-left: 40px;
+    /* margin-top: 66px;
+    padding-left: 40px; */
     font-size: 2.7em;
 }
-.homelink h2{
-    font-family: "Inter", sans-serif;
+.hometext2{
     font-size: 9.5em;
-    padding-left: 40px;
-    margin-top: -20px;
+    /* padding-left: 40px;
+    margin-top: -20px; */
 }
-.homelink h3{
-    margin-top: -50px;
-    font-family: "Inter", sans-serif;
-    padding-left: 40px;
+.hometext3{
+    /* margin-top: -50px; */
+    /* padding-left: 40px; */
     font-weight: 500;
     font-size: 1.6em;
     color: #5E7583;
@@ -104,24 +117,10 @@
     width: 350px;
     background-color: #185EA0;
 }
-/* .resumeviewbtn{
-    display: block;
-    margin-top: 135px;
-}
-.resume{
-    display: inline-block;
-    font-family: "Inter", sans-serif;
-    border-width: 0;
-    background-color: #00EC97;
-    padding: 35px;
-    font-size: 1.5em;
-    font-weight: bolder;
-    color: white;
-    width: 700px;
-} */
+
 .homebtncontainer{
     display: flex;
-
+    margin-top: 0;
 }
 .resumeviewbtn{
     float: left;
@@ -144,8 +143,8 @@
         font-size: 1.5em;
       font-weight: bolder;
       color: white;
-      display: block;
-      margin-top: 135px;
+      display: flex;
+      /* margin-top: 135px; */
       border-width: 0;
   }
   .resumeviewbtn span{
@@ -308,7 +307,7 @@
       font-weight: bolder;
       color: white;
       display: block;
-      margin-top: 135px;
+      /* margin-top: 135px; */
       border-width: 0;
   }
   .portfolioviewbtn span{
