@@ -48,31 +48,25 @@ this.classList.toggle('rotate');
 
 //___________________________________________________________________________________SKILLMETER
 document.addEventListener('DOMContentLoaded', function() {
-document.getElementById('skills-button').addEventListener('click', function() {
-    toggleVisibility('skills2');
-    resetZIndex();
-});
-document.getElementById('tools-button').addEventListener('click', function() {
-    toggleVisibility('skills2');
-    event.target.classList.add('z-index-top');
-});
+    document.getElementById('skills-button').addEventListener('click', function() {
+        toggleVisibility('skills1', 'skills2');
+    });
 
-function toggleVisibility(skillClass) {
-    const element = document.querySelector(`.${skillClass}`);
-    if (element.style.display === 'none' || element.style.display === '') {
-        element.style.display = 'block';
-        element.style.zIndex = '3'; // Ensure skills2 is visible and has z-index 3
-    } else {
-        element.style.display = 'none';
+    document.getElementById('tools-button').addEventListener('click', function() {
+        toggleVisibility('skills2', 'skills1');
+    });
+
+    function toggleVisibility(showClass, hideClass) {
+        const showElement = document.querySelector(`.${showClass}`);
+        const hideElement = document.querySelector(`.${hideClass}`);
+
+        showElement.style.display = 'block';
+        showElement.style.zIndex = '3'; // Ensure the visible element has z-index 3
+
+        hideElement.style.display = 'none';
+        hideElement.style.zIndex = ''; // Reset z-index of hidden element
     }
-}
-
-function resetZIndex() {
-    const skills2 = document.querySelector('.skills2');
-    skills2.style.zIndex = ''; // Reset z-index of skills2
-}
 });
-
 //___________________________________________________________________________________PORTFOLIO FILTER NAVIGATION LINK
 filterSelection("all") // Execute the function and show all columns
 
@@ -129,7 +123,7 @@ var previewBtns = document.getElementsByClassName("previewbtn");
 for (var i = 0; i < previewBtns.length; i++) {
 previewBtns[i].addEventListener("click", function () {
     var category = this.getAttribute("data-category");
-    modal.style.display = "block";
+    modal.style.display = "flex";
     filterSlides(category);
     slideIndex = 0;  // Start from the first slide in the category
     showSlide(slideIndex);
@@ -173,7 +167,7 @@ displayedSlides.forEach(slide => {
     slide.classList.remove("displaySlide");
     slide.style.display = "none"; // Hide all slides
 });
-displayedSlides[slideIndex].style.display = "block"; // Show only the current slide
+displayedSlides[slideIndex].style.display = "flex"; // Show only the current slide
 displayedSlides[slideIndex].classList.add("displaySlide");
 }
 
@@ -194,7 +188,7 @@ slides.forEach(slide => {
     slide.style.display = "none";
 });
 if (displayedSlides.length > 0) {
-    displayedSlides[0].style.display = "block";
+    displayedSlides[0].style.display = "flex";
     displayedSlides[0].classList.add("displaySlide");
 }
 addKeyboardNavigation();  // Add keyboard navigation when slides are filtered
@@ -203,7 +197,7 @@ addKeyboardNavigation();  // Add keyboard navigation when slides are filtered
 function resetSlides() {
 slides.forEach(slide => {
     slide.classList.remove("displaySlide");
-    slide.style.display = "block";
+    slide.style.display = "flex";
 });
 }
 
@@ -233,32 +227,68 @@ document.addEventListener("DOMContentLoaded", initializeSlider);
 
 //CONTACT SCRIPTS
 
-function copyText(elementId) {
-    // Get the text element by ID
-    const textElement = document.getElementById(elementId);
-    const textToCopy = textElement.innerText;
-    // Create a temporary textarea element to hold the text
-    const tempTextarea = document.createElement('textarea');
-    tempTextarea.value = textToCopy;
-    document.body.appendChild(tempTextarea);
-    // Select the text in the textarea
-    tempTextarea.select();
-    // Copy the text to the clipboard
-    document.execCommand('copy');
-    // Remove the temporary textarea element
-    document.body.removeChild(tempTextarea);
+// function copyText(elementId) {
+//     // Get the text element by ID
+//     const textElement = document.getElementById(elementId);
+//     const textToCopy = textElement.innerText;
+//     // Create a temporary textarea element to hold the text
+//     const tempTextarea = document.createElement('textarea');
+//     tempTextarea.value = textToCopy;
+//     document.body.appendChild(tempTextarea);
+//     // Select the text in the textarea
+//     tempTextarea.select();
+//     // Copy the text to the clipboard
+//     document.execCommand('copy');
+//     // Remove the temporary textarea element
+//     document.body.removeChild(tempTextarea);
 
-    // Show a custom alert with the copied text
-    showAlert(`Copied: ${textToCopy}`);
-}
+//     // Show a custom alert with the copied text
+//     showAlert(`Copied: ${textToCopy}`);
+// }
 
-function showAlert(message) {
-    const alertBox = document.getElementById('custom-alert');
-    alertBox.innerText = message;
-    alertBox.classList.add('show-alert');
-    // Remove the alert after 1 second
-    setTimeout(() => {
-        alertBox.classList.remove('show-alert');
-    }, 1000);
-}
+// function showAlert(message) {
+//     const alertBox = document.getElementById('custom-alert');
+//     alertBox.innerText = message;
+//     alertBox.classList.add('show-alert');
+//     // Remove the alert after 1 second
+//     setTimeout(() => {
+//         alertBox.classList.remove('show-alert');
+//     }, 1000);
+// }
 
+document.addEventListener('DOMContentLoaded', function () {
+    var dropdown = document.getElementsByClassName("contactdropdown-btn");
+    for (var i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+
+    document.getElementById("github").addEventListener("click", function() {
+        window.open("https://github.com/CodeRex990", "_blank");
+    });
+    document.getElementById("linkedin").addEventListener("click", function() {
+        window.open("https://github.com/CodeRex990", "_blank");
+    });
+
+    var links = document.querySelectorAll('.dropdown-container a');
+    links.forEach(function(link) {
+        if (!link.classList.contains('exclude-copy')) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default action
+                var text = link.textContent;
+                navigator.clipboard.writeText(text).then(function() {
+                    alert('Copied: ' + text);
+                }).catch(function(err) {
+                    console.error('Could not copy text: ', err);
+                });
+            });
+        }
+    });
+});
