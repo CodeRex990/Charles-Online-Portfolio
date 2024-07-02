@@ -73,7 +73,11 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-
+@media only screen and (max-width: 1080px) {
+  .cvplate{
+    left: 200px;
+  }
+}
 .portrait {
   display: inline-flex;
   margin: 0;
@@ -409,9 +413,23 @@
   flex-direction: column;
   margin: 0;
 }
+.aboutlink-contentcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 1000px;
+
+}
+.aboutlink-text{
+  width: 1400px;
+  padding: 10px 40px;
+
+}
 @media only screen and (max-width: 1080px) {
   .aboutlink{
-    height: 1000px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: visible;
   }
 }
 .aboutlink-details{
@@ -424,7 +442,6 @@
   flex-direction: column;
   left: 0;
   margin-left: 0;
-  padding-left: 40px;
 }
 .aboutlink h1{
     font-size: 128px;
@@ -435,9 +452,8 @@
 .about-intro{
     /* display: block; */
     font-family: "Inter", sans-serif;
-    padding: 10px 40px;
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 2.5vh;
     line-height: 1.6;
     /* margin-top: -80px; */
     text-indent: 5%;
@@ -445,16 +461,16 @@
 .aboutlink h2{
     font-family: "Inter", sans-serif;
     font-size: 24px;
-    padding-left: 40px;
+    /* padding-left: 40px; */
     margin-top: -15px;
 
 }
 .about-objectives{
     display: block;
     font-family: "Inter", sans-serif;
-    padding: 10px 40px;
+    /* padding: 10px 40px; */
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 2.5vh;
     line-height: 1.6;
     margin-top: -40px;
     text-indent: 5%;
@@ -504,6 +520,7 @@
 	width: 90%;
 	/* margin-top: -130px; */
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1330,215 +1347,6 @@ ul.skills li.sk-wor { --per: 45; }
 
 
 /* ____________________________CONTACTS_________________________________________________________________________ */
-/* .contactlink{
-    display: flex;
-    flex-direction: column;
-    font-family: "Inter", sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
-
-}
-
-.contactlink h1{
-    font-family: "Inter", sans-serif;
-    font-size: 128px;
-    margin: 0;
-}
-
-
-.contactcontainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-
-}
-
-.copy-container {
-    display: flex;
-    margin-top: -90px;
-    text-align: center;
-    align-items: center;
-}
-
-
-.copy-text {
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    color: #000000;
-    cursor: pointer;
-    transition: color 0.3s;
-    position: relative;
-}
-#number1-to-copy{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.copy-text:hover {
-    transition: 0.2s;
-    color: #007bff;
-    font-weight: bold;
-}
-.copy-text:active{
-    color: green;
-}
-
-.card {
-    position: relative;
-    width: 20%;
-    height: 200px;
-    margin: 0 auto;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
-  }
-  .copy-text::after {
-    content: attr(data-tooltip); 
-    position: absolute;
-    bottom: 100%; 
-    left: 50%;
-    transform: translateX(-50%);
-    background: transparent;
-    color: rgba(97, 97, 97, 0.507);
-    padding: 5px 10px;
-    border-radius: 10px; 
-    white-space: nowrap; 
-
-    opacity: 0; 
-    visibility: hidden; 
-    transition: opacity 0.3s, visibility 0.3s; 
-    z-index: 1;
-    pointer-events: none; 
-    top: -40px;
-}
-
-.copy-text:hover::after,
-.copy-text:focus::after {
-    opacity: 1; 
-    visibility: visible; 
-} */
-  
-  /* .face {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .face.back {
-    box-sizing: border-box;
-    padding: 20px;
-  }
-  
-  .face.back b {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .face.back .desc {
-    background-color: #eee;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .face.front {
-    transition: 0.5s;
-  }
-  
-  .face.front b {
-    margin: 0;
-    padding: 0;
-    font-size: 5em;
-    color: #fff;
-    transition: 0.5s;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-  }
-  
-  .card:hover .face.front {
-    height: 60px;
-  }
-  
-  .card:hover .face.front b {
-    font-size: 1.8em;
-  }
-  
-  .face.front {
-    background-color: #00ff80;
-    border-radius: 15px;
-  }
-  .content {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-  }
-  .custom-alert {
-    position: fixed;
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
-    font-size: 1rem;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 10;
-}
-
-.show-alert {
-    opacity: 1;
-}
-
-.number p{
-    text-align: center;
-}
-
-.github-link {
-    text-decoration: none;
-    display: grid;
-    padding: 10px;
-    color: inherit; 
-    transition: color 0.3s ease; 
-}
-
-.github-link:hover {
-    color: #006ACB; 
-}
-
-
-.contact-navbar{
-  background: #1b1a1b;
-  backdrop-filter: blur(15px);
-  width: 250px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  overflow-y: auto;
-  transition: 0.6s ease;
-  transition-property: left;
- }
- .contact-navbar::-webkit-scrollbar {
-   width: 0px;
- }
- 
- 
- 
- .contact-navbar.active{
-  left: 0;
- } */
 
  .contact-sidebar {
   height: 100%;
@@ -1553,7 +1361,7 @@ ul.skills li.sk-wor { --per: 45; }
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  transition: width 0.5s; /* Smooth transition */
+  transition: width 0.5s; 
   overflow-x: hidden;
 }
 .contact-sidebar:hover {
@@ -1573,12 +1381,12 @@ ul.skills li.sk-wor { --per: 45; }
   text-align: center;
   cursor: pointer;
   outline: none;
-  transition: justify-content 0.3s, padding 0.3s; /* Smooth transition */
+  transition: justify-content 0.3s, padding 0.3s;
   white-space: nowrap;
 }
 .contact-sidebar .contactdropdown-btn .dropdown-logo,
 .contact-sidebar .contactdropdown-btn .contact-text {
-    display: none; /* Initially hide text and dropdown logo */
+    display: none;
 }
 
 .contact-sidebar .contactdropdown-btn:hover {
@@ -1586,14 +1394,14 @@ ul.skills li.sk-wor { --per: 45; }
 }
 
 .contact-sidebar:hover .contactdropdown-btn {
-    justify-content: space-between; /* Space items when sidebar is hovered */
+    justify-content: space-between; 
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .contact-sidebar:hover .contactdropdown-btn .dropdown-logo,
 .contact-sidebar:hover .contactdropdown-btn .contact-text {
-    display: inline; /* Show text and dropdown logo on hover */
+    display: inline; 
 }
 .contactdropdown-btn{
   display: flex;
