@@ -417,8 +417,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 1000px;
-
+  
 }
 .aboutlink-text{
   width: 1400px;
@@ -430,6 +429,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     overflow: visible;
+  }
+  .aboutlink-contentcontainer{
+    height: 1000px;
   }
 }
 .aboutlink-details{
