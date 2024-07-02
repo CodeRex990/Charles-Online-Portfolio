@@ -1325,8 +1325,9 @@ ul.skills li.sk-wor { --per: 45; }
 .portfolioview-closebtn {
   position: absolute;
   z-index: 51;
-  top: 10px;
-  right: 20px;
+  top: 0;
+  right: 0;
+  padding: 30px 150px;
   font-size: 40px;
   font-weight: bold;
 }
