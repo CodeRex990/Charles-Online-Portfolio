@@ -432,6 +432,11 @@
   }
   .aboutlink-contentcontainer{
     height: 1000px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .aboutlink-text{
+    width: 1300px;
   }
 }
 .aboutlink-details{
@@ -444,6 +449,7 @@
   flex-direction: column;
   left: 0;
   margin-left: 0;
+  padding-left: 40px;
 }
 .aboutlink h1{
     font-size: 128px;
@@ -455,7 +461,7 @@
     /* display: block; */
     font-family: "Inter", sans-serif;
     text-align: justify;
-    font-size: 2.5vh;
+    font-size: 1.5em;
     line-height: 1.6;
     /* margin-top: -80px; */
     text-indent: 5%;
@@ -472,7 +478,7 @@
     font-family: "Inter", sans-serif;
     /* padding: 10px 40px; */
     text-align: justify;
-    font-size: 2.5vh;
+    font-size: 1.5em;
     line-height: 1.6;
     margin-top: -40px;
     text-indent: 5%;
