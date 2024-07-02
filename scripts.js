@@ -222,6 +222,21 @@ if (event.key === "ArrowLeft") {
 }
 }
 
+document.getElementById('arduinobot-btn').addEventListener('click', function() {
+    const link = 'https://youtube.com/shorts/Ia5Q0nLDLOw';
+    window.open(link, '_blank');
+});
+document.getElementById('samsil-btn').addEventListener('click', function() {
+    const link = 'https://youtube.com/playlist?list=PLgfiwLqCVteVeQSNEfcH6Sb5grbm9rH7a&si=uIr9yFbUmWQLgTTv';
+    window.open(link, '_blank');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const img = document.getElementById('arduinobot-btn samsil-btn');
+    const tooltipText = img.getAttribute('data-tooltip');
+    const tooltipDiv = img.nextElementSibling;
+    tooltipDiv.textContent = tooltipText;
+});
 document.addEventListener("DOMContentLoaded", initializeSlider);
 
 
