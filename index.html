@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charles Online Resume</title>
+    <title>Charles Eduard Español</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <div class="sidenavbar">
+        <nav class="sidenavbar">
             <div class="navtop">
             <a href="#home-link"><img src="./resources/Images/cee.png" class="navlogo" style="width: 8%;"></a>
             </div>
@@ -21,9 +21,9 @@
                 <a href="#about-link" class="active">About</a>
                 <a href="#resume-link" class="active">Resume</a>
                 <a href="#portfolio-link" class="active">Portfolio</a>
-                <a href="#contact-link" class="active">Contact</a>
+                <!-- <a href="#contact-link" class="active">Contact</a> -->
             </div>
-        </div>
+        </nav>
 <div class="cvplate" id="home-link">
 
     <section id="home-link">     
@@ -34,7 +34,7 @@
             <a class="hometext2">Charles <br> Español <hr></a>
             <a class="hometext3">Computer Engineering Graduate</a>
         </div>
-            <img class="portrait" src="./resources/Images/charles.png" width="679" height="969">
+            <img class="portrait" src="./resources/Images/charles.png" width="680px" >
         </div>
         <div class="homebtncontainer">
                     <div class="resumeviewbtn" data-tooltip="Click to Download">
@@ -67,117 +67,166 @@
 
     <section id="about-link">
         <div class="aboutlink">
-            <h1>About<hr></h1>
-            
-            <p1><span>I’ am Charles Eduard D.C Español, a recent graduate with a Computer Engineering Degree from Bulacan State University. I am eager to apply the skills and knowledge I’ve acquired during my studies to real-world challenges. My current experiences involved school related projects such as using Arduino kits and web development. I also have a good knowledge in computer related technicalities. I've always had a strong passion for design and am constantly looking to get better.</span></p1>
-        <br>
-            <h2><span>Career Objectives:</span></h2>
-        <br>
-        <p3>To acquire valuable knowledge and skills to complement those that I have learned from school in an actual job environment and develop my personality as a career person while utilizing my given skills. My ultimate goal is to advance organizational and personal objectives by making a noticeable difference with passion and dedication.</p3>
-        </div>
-        <div class="skillmeter">
-            <div class="profile-skills mainskills">
-                <!-- <input type="checkbox" id="sk1"> -->
-                <label for="sk1"></label>
-                <button class="skill-button skillbtn" id="skills-button" style="z-index: 1; margin-left: 40px;">SKILLS</button>
-                <ul class="skills skills1">
-                    <li class="sk-cms"><span>Graphic Design</span></li>
-                    <li class="sk-dis"><span>UI Design</span></li>
-                    <li class="sk-dtb"><span>Coding</span></li>
-                    <li class="sk-pro"><span>Technical</span></li>
-                    <li class="sk-res"><span>Animation</span></li>
-                </ul>
+            <div class="aboutlink-details">
+                <div class="aboutlink-header">
+                    <h1>About</h1>
+                    <hr style="height: 10px; width: 350px; margin-left: 10px; background-color: #185EA0;">
+                </div>
+                    <div class="aboutlink-text">
+                        <p class="about-intro"><span>This online portfolio is a showcase of my current skills, highlighting my experties in graphic design and front-end web development. It also providees examples of my other works, demonstrating my capabilities and the quality of my outputs. Through theis portfolio, you can explore my accomplishments, projects, and diverse skill sets. </span></p>
+                        <br>
+                        <h2><span>Career Objectives:</span></h2>
+                        <br>
+                        <p class="about-objectives">To acquire valuable knowledge and skills to complement those that I have learned from school in an actual job environment and develop my personality as a career person while utilizing my given skills. My ultimate goal is to advance organizational and personal objectives by making a noticeable difference with passion and dedication.</p>
+                    </div>
             </div>
-            <div class="profile-skills toolskills">
-                <button class="skill-button toolbtn" id="tools-button" style="margin-left:300px; margin-top: -6px;">TOOLS</button>
-                <ul class="skills skills2">
-                    <li class="sk-gim"><span>Adobe Photoshop</span></li>
-                    <li class="sk-ado"><span>Figma</span></li>
-                    <li class="sk-tri"><span>Adobe AfterEffects</span></li>
-                    <li class="sk-wor"><span>Blender</span></li>
-                    <li class="sk-tre"><span>Microsoft Office</span></li>
-                </ul>
+            <div class="skillmeter">
+                <div class="skillmeter-buttons">
+                    <button class="skill-button skillbtn" id="skills-button">SKILLS</button>
+                    <button class="skill-button toolbtn" id="tools-button">TOOLS</button>     
+                </div>
+                    <div class="profileskill-container">
+                        <div class="profile-skills mainskills">
+                            <!-- <input type="checkbox" id="sk1"> -->
+                            <!-- <label for="sk1"></label> -->
+                            <ul class="skills skills1">
+                                <li class="sk-cms"><span>Graphic Design</span></li>
+                                <li class="sk-dis"><span>UI Design</span></li>
+                                <li class="sk-dtb"><span>Coding</span></li>
+                                <li class="sk-pro"><span>Technical</span></li>
+                                <li class="sk-res"><span>Animation</span></li>
+                            </ul>
+                        </div>
+                        <div class="profile-skills toolskills">
+                            <ul class="skills skills2">
+                                <li class="sk-gim"><span>Adobe Photoshop</span></li>
+                                <li class="sk-ado"><span>Figma</span></li>
+                                <li class="sk-tri"><span>Adobe AfterEffects</span></li>
+                                <li class="sk-wor"><span>Blender</span></li>
+                                <li class="sk-tre"><span>Microsoft Office</span></li>
+                            </ul>
+                        </div>
+                </div>
             </div>
         </div>
+
     </section>
 
     <section id="resume-link">
         <div class="resumelink">
-            <h1>RESUME<hr></h1>
-            <div class="subheader">
+            <div class="resume-header">
+                <h1>RESUME</h1>
+                <hr style="height: 10px; width: 350px; margin-left: 10px; background-color: #185EA0;">
+            </div>
+            
+            <div class="column-container">
+
+            <div class="frontcolumn">
                 <div class="column visible" id="knowledge-column">
-                    <h2>Knowledge<hr></h2>
-                    <p2><span>Programming</span><br>
-                        •  HTML & CSS<br>
-                        •  Javascript<br><br></p2>
-                    <p2><span>Digital Design and Layout</span><br>
-                        •  Adobe Photoshop<br>
-                        •  Figma<br>
-                        •  Canva<br><br></p2>  
-                    <p2><span>Video Editing</span><br>
-                        •  Adobe Premiere<br>
-                        •  Adobe AfterEffects<br><br></p2>
-                    <p2><span>3D Modelling</span><br>
-                        •  Blender<br>
-                        •  Tinkercad<br>
-                        •  Sketchapp<br><br></p2>
-                    <p2><span>Technical Skills</span><br>
-                        •  Computer Troubleshooting & Assembly<br>
-                        •  Microsoft Office<br><br></p2>
+                    <div class="column-title"> 
+                        <h2>Knowledge<hr></h2>
+                    </div>
+                        <div class="columntext-container">
+                            <p2 class="column-text"><span>Programming</span><br>
+                                •  HTML & CSS<br>
+                                •  Javascript<br><br></p2>
+                            <p2 class="column-text"><span>Digital Design and Layout</span><br>
+                                •  Adobe Photoshop<br>
+                                •  Figma<br>
+                                •  Canva<br><br></p2>  
+                            <p2 class="column-text"><span>Video Editing</span><br>
+                                •  Adobe Premiere<br>
+                                •  Adobe AfterEffects<br><br></p2>
+                            <p2 class="column-text"><span>3D Modelling</span><br>
+                                •  Blender<br>
+                                •  Tinkercad<br>
+                                •  Sketchapp<br><br></p2>
+                            <p2 class="column-text"><span>Technical Skills</span><br>
+                                •  Computer Troubleshooting & Assembly<br>
+                                •  Microsoft Office<br><br></p2>
+                        </div>
                 </div>
-                <div class="column visible" id="personal-column">            
-                    <h2>Personal Skills<hr></h2>
-                    <p2>•  Fast Learning Ability<br>
-                        •  Highly Motivated Person<br>
-                        •  Disciplined<br>
-                        •  Hardworking<br>
-                        •  Eager to learn new things<br>
-                        •  Flexible, can easily adapt<br>
-                        •  Good Listener<br><br></p2>
-                    <h2>Personal Background<hr></h2>
-                    <p2>Birth Date: &emsp;&emsp;&emsp;&emsp;December 4, 2001<br>
-                        Citizenship: &emsp;&emsp;&emsp;&ensp;Filipino<br>
-                        Civil Status: &emsp;&emsp;&emsp;&ensp;Single<br>
-                        Height: &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;5'8 ft.<br>
-                        Language Spoken: &nbsp;Filipino and English<br><br></p2>
+
+                <div class="column visible" id="personal-column">    
+                    <div class="column-title">         
+                        <h2>Personal Skills<hr></h2>
+                    </div>
+                        <div class="columntext-container">
+                            <p2 class="column-text">•  Fast Learning Ability<br>
+                                •  Highly Motivated Person<br>
+                                •  Disciplined<br>
+                                •  Hardworking<br>
+                                •  Eager to learn new things<br>
+                                •  Flexible, can easily adapt<br>
+                                •  Good Listener<br><br></p2>
+                            <h2 class="column-title">Personal Background<hr></h2>
+                            <p2 class="column-text">Birth Date: &emsp;&emsp;&emsp;&emsp;December 4, 2001<br>
+                                Citizenship: &emsp;&emsp;&emsp;&ensp;Filipino<br>
+                                Civil Status: &emsp;&emsp;&emsp;&ensp;Single<br>
+                                Height: &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;5'8 ft.<br>
+                                Language Spoken: &nbsp;Filipino and English<br><br></p2>
+                        </div>
                 </div>
+                </div>
+
+            <div class="nextcolumn">
                 <div class="column2" id="education-column"> 
+                    <div class="column-title"> 
                     <h2>Education<hr></h2>
-                    <p2><b>2020 - 2024</b><br>
+                </div>
+                <div class="columntext-container">
+                    <p2 class="column-text"><b>2020 - 2024</b><br>
                         <font size="5"><b>Bulacan State University</b></font><br>
                         Bachelor of Science in Computer Engineering<br><br></p2>
-                    <h2>Seminars and Trainings<hr></h2>
-                    <p2><b>2021:</b>Youth Leadership and Digital Leadership Webinar<br><br>
-                        <b>2022:</b>Social Media and Multimedia as a Tool to Level Up &emsp;&emsp;&emsp;Online Business<br><br>
-                        <b>2023:</b>Digital Mindset: Guide To Startup<br>&emsp;&emsp;&emsp;ICT Industry Development Bureau<br><br><b>&emsp;&emsp;&emsp;WebTek Inc.</b><br>&emsp;&emsp;&emsp;On the Job Training<br>&emsp;&emsp;&emsp;Technical and IT Support and Graphic Desginer<br><br></p2>
                 </div>
+                <div class="columntext-container">
+                    <h2 class="column-title">Seminars and Trainings<hr></h2>
+                    <p2  class="column-text"><b>2021:</b>Youth Leadership and Digital Leadership Webinar<br><br>
+                        <b>2022:</b>Social Media and Multimedia as a Tool to Level Up Online Business<br><br>
+                        <b>2023:</b>Digital Mindset: Guide To Startup<br>&emsp;&emsp;&emsp;ICT Industry Development Bureau<br><br><b>&emsp;&emsp;&emsp;WebTek Inc.</b><br>&emsp;&emsp;&emsp;On the Job Training<br>&emsp;&emsp;&emsp;Technical and IT Support and Graphic Desginer<br><br></p2>
+                    </div> 
+                    </div>
+
                 <div class="column2" id="achievements-column"> 
-                    <h2>Achievements<hr></h2>
-                    <p2>
+                    <h2 class="column-title">Achievements<hr></h2>
+                    <div class="columntext-container">
+                    <p2  class="column-text">
                         <font size="5"><b>Academic Awardee</b></font><br>
                         College Year of 2021 - 2024<br><br>
                         <font size="5"><b>Robotics ITCup Grand Finalist</b></font><br>
                         Technokidz 2018<br><br></p2>
-                    <h2>Affiliation<hr></h2>
-                    <p2><b>2020 - 2024</b><br>
+                        </div>
+                    <h2 class="column-title">Affiliation<hr></h2>
+                    <div class="columntext-container">
+                    <p2 class="column-text"><b>2020 - 2024</b><br>
                         <font size="5"><b>Institute of Computer Engineers of the Philippines</b></font><br>
                         ICPEP.se MC Multimedia Assistant<br><br></p2>
+                        </div>
                 </div>
+                </div>
+
                 <!-- Buttons -->
+                 <div class="resumenext-btn">
                 <button class="next-btn" id="nextBtn">
                     <svg class="arrow" viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
-                
                 </button>
+                </div>
                 <!-- Buttons -->
+
             </div>
+
         </div>
     </section>
 
     <section id="portfolio-link">
         <div class="portfoliolink">
-            <h1>Portfolio<hr></h1>
-            <div class="portfoliocontainer">
+            <div class="portfolio-header">
+                <h1>Portfolio</h1>
+                    <hr style="height: 10px; width: 350px; margin-left: 10px; background-color: #185EA0;">
 
+            </div>
+            <div class="portfoliocontainer">
+                <div class="portfoliolink-button">
                     <div id="myBtnContainer" class="myBtnContainer">
                         <button class="portfoliobtn active2" onclick="filterSelection('all')"> Show all</button>
                         <button class="portfoliobtn" onclick="filterSelection('web')"> Web Design</button>
@@ -185,57 +234,68 @@
                         <button class="portfoliobtn" onclick="filterSelection('3d')"> 3D Model</button>
                         <button class="portfoliobtn" onclick="filterSelection('projects')"> Projects</button>
                     </div>
-                    
+                </div>
                     <!-- Portfolio Gallery Grid -->
                     <div class="portfoliorow">
                         <!-- WEB DESIGN COLUMN -->
                         <div class="portfoliocolumn web">
-                        <div class="portfoliocontent">
-                                <div class="previewbtn " id="previewbtn" data-category="web2"> 
-                                    <a href="https://coderex990.github.io/bigboss-diner-online/index.html">
-                                        <button >
-                                            <img src="./resources/Images/gallery copy.png" alt="Preview Image" >
-                                            Preview
-                                        </button>
-                                    </a>
-                                </div>
-                            <img src="./resources/Images/WebDesign/BigBossThumbnail.png" class="portfolioitems" >
-                            <h1>BigBoss Diner</h1>
+                            <div class="portfoliocontent">
+                                <div class="portfolioimage-container">
+                                <img src="./resources/Images/WebDesign/BigBossThumbnail.png" class="portfolioitems" >
+                                <!-- <div class="previewbtn " id="previewbtn" data-category="web2">  -->
+                                    <div class="previewbtn " id="previewbtn" > 
+                                        <a href="https://coderex990.github.io/bigboss-diner-online/index.html" style="text-decoration: none;">
+                                            <button >
+                                                <img src="./resources/Images/gallery copy.png" alt="Preview Image" >
+                                                Preview
+                                            </button>
+                                        </a>
+                                    </div>
+                                <h1>BigBoss Diner</h1>
+                            </div>
                         </div>
                         </div>
 
                         <div class="portfoliocolumn web">
-                        <div class="portfoliocontent">
-                            <div class="previewbtn" id="previewbtn" data-category="web1"> 
-                                <!-- <a href="https://www.facebook.com"> -->
-                                    <button>
-                                        <img src="./resources/Images/gallery copy.png" alt="Preview Image" >
-                                        Preview
-                                    </button>
-                                <!-- </a> -->
+                            <div class="portfoliocontent">
+                                <div class="portfolioimage-container">
+                                    <img src="./resources/Images/WebDesign/pansanpthumbnail.png"  class="portfolioitems">
+                                    <div class="previewbtn" id="previewbtn" data-category="web1"> 
+                                        <!-- <a href="https://www.facebook.com"> -->
+                                            <button>
+                                                <img src="./resources/Images/gallery copy.png" alt="Preview Image" >
+                                                Preview
+                                            </button>
+                                        <!-- </a> -->
+                                    </div>
+                                    <h1>pansnap Studio</h1>
+                                </div>
                             </div>
-                            <img src="./resources/Images/WebDesign/pansanpthumbnail.png"  class="portfolioitems">
-                            <h1>pansnap Studio</h1>
                         </div>
-                        </div>
+
+
 
                         <!-- GRAPHIC DESIGN COLUMN -->
                         <div class="portfoliocolumn graphicdesign">
-                        <div class="portfoliocontent">
-                            <div class="previewbtn" id="previewbtn"  data-category="logo"> 
-                                <!-- <a href="https://www.facebook.com"> -->
-                                    <button>
-                                        <img src="./resources/Images/gallery copy.png" alt="Preview Image" >
-                                        Preview
-                                    </button>
-                                <!-- </a> -->
+                            <div class="portfoliocontent">
+                                <div class="portfolioimage-container">
+                                    <img src="./resources/Images/Logo/LogoGallery.png" alt="logo1" class="portfolioitems">
+                                    <div class="previewbtn" id="previewbtn"  data-category="logo"> 
+                                        <!-- <a href="https://www.facebook.com"> -->
+                                            <button>
+                                                <img src="./resources/Images/gallery copy.png" alt="Preview Image" >
+                                                Preview
+                                            </button>
+                                        <!-- </a> -->
+                                    </div>
+                                    <h1>Logo Gallery</h1>
+                                </div>
                             </div>
-                            <img src="./resources/Images/Logo/LogoGallery.png" alt="logo1" class="portfolioitems">
-                            <h1>Logo Gallery</h1>
                         </div>
-                        </div>
+
                         <div class="portfoliocolumn graphicdesign">
                             <div class="portfoliocontent">
+                                <div class="portfolioimage-container">
                                 <div class="previewbtn" id="previewbtn"  data-category="illu"> 
                                     <!-- <a href="https://www.facebook.com"> -->
                                         <button>
@@ -247,9 +307,13 @@
                             <img src="./resources/Images/Illustrations/Furby Exia00 copy.png" alt="logo1" class="portfolioitems">
                             <h1>Illustrations</h1>
                             </div>
+                            </div>
                         </div>
+
                         <div class="portfoliocolumn graphicdesign">
                             <div class="portfoliocontent">
+                                <div class="portfolioimage-container">
+                            <img src="./resources/Images/Layout Design/ProductCatalog Mockup Layout.png" alt="layout" class="portfolioitems">
                                 <div class="previewbtn" id="previewbtn"  data-category="layout"> 
                                     <!-- <a href="https://www.facebook.com"> -->
                                         <button>
@@ -258,12 +322,15 @@
                                         </button>
                                     <!-- </a> -->
                                 </div>
-                            <img src="./resources/Images/Layout Design/ProductCatalog Mockup Layout.png" alt="layout" class="portfolioitems">
                             <h1>Layout Design</h1>
                             </div>
+                            </div>
                         </div>
+
                         <div class="portfoliocolumn graphicdesign">
                             <div class="portfoliocontent">
+                                <div class="portfolioimage-container">
+                            <img src="./resources/Images/Mockup Shirt Designs/ShirtGallery.png" alt="shirt" class="portfolioitems">
                                 <div class="previewbtn" id="previewbtn"  data-category="shirt"> 
                                     <!-- <a href="https://www.facebook.com"> -->
                                         <button>
@@ -272,14 +339,15 @@
                                         </button>
                                     <!-- </a> -->
                                 </div>
-                            <img src="./resources/Images/Mockup Shirt Designs/ShirtGallery.png" alt="shirt" class="portfolioitems">
                             <h1>Mockup Shirt Designs</h1>
+                                </div>
                             </div>
                         </div>
                         
                         <!-- 3D MODEL COLUMN -->
                         <div class="portfoliocolumn 3d">
                         <div class="portfoliocontent">
+                            <div class="portfolioimage-container">
                             <div class="previewbtn" id="previewbtn"  data-category="3dd"> 
                                 <!-- <a href="https://www.facebook.com"> -->
                                     <button>
@@ -290,12 +358,14 @@
                             </div>
                             <img src="resources/Images/Projects/SAM-SIL 3D 1.png" alt="3D" class="portfolioitems">
                             <h1>SAM-SIL(Research Output)</h1>
+                                </div>
                         </div>
                         </div>
                         
                         <!-- PROJECTS COLUMN -->
                         <div class="portfoliocolumn projects">
                         <div class="portfoliocontent">
+                            <div class="portfolioimage-container">
                             <div class="previewbtn" id="previewbtn"  data-category="bot"> 
                                 <!-- <a href="https://www.facebook.com"> -->
                                     <button>
@@ -306,98 +376,111 @@
                             </div>
                             <img src="./resources/Images/Projects/Tank Arduino1.jpg" alt="tankbot" class="portfolioitems">
                             <h1>Arduino Projects</h1>
+                            </div>
                         </div>
                         </div>
 
                         <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <div class="imageslider">
-                                <div class="slides" style="width: 1300px; height: 100%; margin-left: 275px;">
-                                    <img src="resources/Images/WebDesign/PanSnapLandingPage.png" alt="image #1" class="slide web1" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/WebDesign/PanSnap - Welcomepage.png" alt="image #2" class="slide web1"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/WebDesign/Pansnap - signupage.png" alt="image #3" class="slide web1"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/WebDesign/PanSnap - ContactPage.png" alt="image #4" class="slide web1"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/WebDesign//BigBossLandingPAge.png" alt="image #5" class="slide web2"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/WebDesign//BigBosssHotdogpage.png" alt="image #6" class="slide web2"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/WebDesign//BigBosssBgpage.png" alt="image #7" class="slide web2"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/WebDesign//BigBossssidepage.png" alt="image #8" class="slide web2"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/WebDesign//BigBosssdrinkpage.png" alt="image #8" class="slide web2"  style="width: 65%; height: 65%;">
-
-                                    <img src="./resources/Images/Logo/REXlangnew.jpg" alt="logo #1" class="slide logo" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Logo/Astray Red Frame Logo copy.png" alt="logo #2" class="slide logo"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Logo//BigBoss Customhd.jpg" alt="logo #3" class="slide logo" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Logo/Ericlogocommision.jpg" alt="logo #4" class="slide logo" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Logo/Omegalogo.jpg" alt="logo #5" class="slide logo" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Logo/RexOLD.jpg" alt="logo #6" class="slide logo" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Logo/SAMSIL Logo ata copy.png" alt="logo #7" class="slide logo" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Logo/SolaTech.png" alt="logo #8" class="slide logo" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Logo/Wing Gundam Logo copy.png" alt="logo #9" class="slide logo" style="width:65%; height: 65%;">
-
-                                    <img src="./resources/Images/Illustrations/SPIT EXia box art.jpg" alt="pic #1" class="slide illu" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Illustrations/CPE4A-GROUP3-ESPANOL-LORENZO-CALIMON-CARREON-BONTILE-FONTANILLA_BUSINESS MODEL CANVAS.png" alt="pic #2" class="slide illu" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Illustrations/CPE4A-GROUP3-ESPANOL-LORENZO-CARREON-CALIMON-BONTILE-FONTANILLA_MVP.png" alt="pic #3" class="slide illu" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Illustrations/CPE4A-GROUP3-ESPANOL-LORENZO-CARREON-CALIMON-BONTILE-FONTANILLA_SWOT.png" alt="pic #4" class="slide illu" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Illustrations/EasyPCZombieRobot.png" alt="pic #5" class="slide illu" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Illustrations/Furby Exia00 copy.png" alt="pic #6" class="slide illu" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Illustrations/newcharles.jpg" alt="pic #7" class="slide illu" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Illustrations/RLWart.png" alt="pic #8" class="slide illu" style="width: 65%; height: 65%;">
-
-                                    <img src="./resources/Images/Layout Design/BBH1.png" alt="layout #1" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH2.png" alt="layout #2" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH3.png" alt="layout #3" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH4.png" alt="layout #4" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH5.png" alt="layout #5" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH6.png" alt="layout #6" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH7.png" alt="layout #7" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH8.png" alt="layout #8" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH9.png" alt="layout #9" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH10.png" alt="layout #10" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH11.png" alt="layout #11" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BBH12.png" alt="layout #12" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/MenuMockup.png" alt="layout #13" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BigBossMenuFront.png" alt="layout #14" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/BigBossMenuBack.png" alt="layout #15" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/ProductCatalog Mockup Layout.png" alt="layout #16" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/WT1.png" alt="layout #17" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/WT2.png" alt="layout #18" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/WT3.png" alt="layout #19" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/WT4.png" alt="layout #20" class="slide layout" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/WT5.png" alt="layout #21" class="slide layout"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/WT6.png" alt="layout #22" class="slide layout"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/WT7.png" alt="layout #23" class="slide layout"  style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Layout Design/WT8.png" alt="layout #24" class="slide layout" style="width: 65%; height: 65%;">
                             
-
-                                    <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy.png" alt="shirt #1" class="slide shirt" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy2.png" alt="shirt #2" class="slide shirt" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy2Back.png" alt="shirt #3" class="slide shirt" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy3.png" alt="shirt #4" class="slide shirt" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy4.png" alt="shirt #5" class="slide shirt" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy5.png" alt="shirt #6" class="slide shirt" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy6.png" alt="shirt #7" class="slide shirt" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy7.png" alt="shirt #8" class="slide shirt" style="width: 65%; height: 65%;">
-
-                                    <img src="./resources/Images/Projects/SAM-SIL 3D 1.png" alt="3d #1" class="slide 3dd" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Projects/SAM-SIL 3D 2.png" alt="3d #2" class="slide 3dd"style="width: 65%; height: 65%;">
-                                    <!-- <video controls><source src="/Images/Projects/SAM-SIL DEMO1.mp4"></video> -->
-
-                                    <img src="./resources/Images/Projects/Tank Arduino1.jpg" alt="bot #1" class="slide bot" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Projects/Arduino Tank2.jpg" alt="bot #2" class="slide bot" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Projects/Tank Arduino3.jpg" alt="bot #3" class="slide bot" style="width: 65%; height: 65%;">
-                                    <img src="./resources/Images/Projects/Tank Arduino4.jpg" alt="bot #4" class="slide bot" style="width: 65%; height: 65%;">
-
-
-
-
-                                    <!-- Add more images as needed -->
-
-                                </div>
-                                <button class="prev" onclick="prevSlide()"> &#10094; </button>
-                                <button class="next" onclick="nextSlide()"> &#10095; </button>
+                            <div class="portfolioview-closebtn">
+                            <span class="close">&times;</span>
                             </div>
+                            <div class="imageslider">
+
+                                <div class="portfolioslider-btn prev-btn">
+                                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                                </div>
+                                
+                                    <div class="slides">
+                                        <img src="resources/Images/WebDesign/PanSnapLandingPage.png" alt="image #1" class="slide web1 mySlides" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/WebDesign/PanSnap - Welcomepage.png" alt="image #2" class="slide web1 mySlides"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/WebDesign/Pansnap - signupage.png" alt="image #3" class="slide web1 mySlides"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/WebDesign/PanSnap - ContactPage.png" alt="image #4" class="slide web1 mySlides"  style="width: 65%; height: 65%;">
+
+                                        <!-- <img src="./resources/Images/WebDesign//BigBossLandingPAge.png" alt="image #5" class="slide web2"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/WebDesign//BigBosssHotdogpage.png" alt="image #6" class="slide web2"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/WebDesign//BigBosssBgpage.png" alt="image #7" class="slide web2"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/WebDesign//BigBossssidepage.png" alt="image #8" class="slide web2"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/WebDesign//BigBosssdrinkpage.png" alt="image #8" class="slide web2"  style="width: 65%; height: 65%;"> -->
+
+                                        <img src="./resources/Images/Logo/REXlangnew.jpg" alt="logo #1" class="slide logo" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Logo/Astray Red Frame Logo copy.png" alt="logo #2" class="slide logo"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Logo//BigBoss Customhd.jpg" alt="logo #3" class="slide logo" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Logo/Ericlogocommision.jpg" alt="logo #4" class="slide logo" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Logo/Omegalogo.jpg" alt="logo #5" class="slide logo" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Logo/RexOLD.jpg" alt="logo #6" class="slide logo" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Logo/SAMSIL Logo ata copy.png" alt="logo #7" class="slide logo" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Logo/SolaTech.png" alt="logo #8" class="slide logo" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Logo/Wing Gundam Logo copy.png" alt="logo #9" class="slide logo" style="width:65%; height: 65%;">
+
+                                        <img src="./resources/Images/Illustrations/SPIT EXia box art.jpg" alt="pic #1" class="slide illu" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Illustrations/CPE4A-GROUP3-ESPANOL-LORENZO-CALIMON-CARREON-BONTILE-FONTANILLA_BUSINESS MODEL CANVAS.png" alt="pic #2" class="slide illu" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Illustrations/CPE4A-GROUP3-ESPANOL-LORENZO-CARREON-CALIMON-BONTILE-FONTANILLA_MVP.png" alt="pic #3" class="slide illu" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Illustrations/CPE4A-GROUP3-ESPANOL-LORENZO-CARREON-CALIMON-BONTILE-FONTANILLA_SWOT.png" alt="pic #4" class="slide illu" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Illustrations/EasyPCZombieRobot.png" alt="pic #5" class="slide illu" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Illustrations/Furby Exia00 copy.png" alt="pic #6" class="slide illu" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Illustrations/newcharles.jpg" alt="pic #7" class="slide illu" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Illustrations/RLWart.png" alt="pic #8" class="slide illu" style="width: 65%; height: 65%;">
+
+                                        <img src="./resources/Images/Layout Design/BBH1.png" alt="layout #1" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH2.png" alt="layout #2" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH3.png" alt="layout #3" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH4.png" alt="layout #4" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH5.png" alt="layout #5" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH6.png" alt="layout #6" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH7.png" alt="layout #7" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH8.png" alt="layout #8" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH9.png" alt="layout #9" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH10.png" alt="layout #10" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH11.png" alt="layout #11" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BBH12.png" alt="layout #12" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/MenuMockup.png" alt="layout #13" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BigBossMenuFront.png" alt="layout #14" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/BigBossMenuBack.png" alt="layout #15" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/ProductCatalog Mockup Layout.png" alt="layout #16" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/WT1.png" alt="layout #17" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/WT2.png" alt="layout #18" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/WT3.png" alt="layout #19" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/WT4.png" alt="layout #20" class="slide layout" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/WT5.png" alt="layout #21" class="slide layout"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/WT6.png" alt="layout #22" class="slide layout"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/WT7.png" alt="layout #23" class="slide layout"  style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Layout Design/WT8.png" alt="layout #24" class="slide layout" style="width: 65%; height: 65%;">
+                                
+
+                                        <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy.png" alt="shirt #1" class="slide shirt" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy2.png" alt="shirt #2" class="slide shirt" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy2Back.png" alt="shirt #3" class="slide shirt" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy3.png" alt="shirt #4" class="slide shirt" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy4.png" alt="shirt #5" class="slide shirt" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy5.png" alt="shirt #6" class="slide shirt" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy6.png" alt="shirt #7" class="slide shirt" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Mockup Shirt Designs/Shirt Mockup copy7.png" alt="shirt #8" class="slide shirt" style="width: 65%; height: 65%;">
+
+                                        <img src="./resources/Images/Projects/SAM-SIL 3D 1.png" alt="3d #1" class="slide 3dd" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Projects/SAM-SIL 3D 2.png" alt="3d #2" class="slide 3dd"style="width: 65%; height: 65%;">
+                                        <!-- <video controls><source src="/Images/Projects/SAM-SIL DEMO1.mp4"></video> -->
+
+                                        <img src="./resources/Images/Projects/Tank Arduino1.jpg" alt="bot #1" class="slide bot" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Projects/Arduino Tank2.jpg" alt="bot #2" class="slide bot" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Projects/Tank Arduino3.jpg" alt="bot #3" class="slide bot" style="width: 65%; height: 65%;">
+                                        <img src="./resources/Images/Projects/Tank Arduino4.jpg" alt="bot #4" class="slide bot" style="width: 65%; height: 65%;">
+
+
+
+
+                                        <!-- Add more images as needed -->
+
+                                    </div>
+
+                                <div class="portfolioslider-btn next-btn">
+                                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                                </div>
+                            </div>
+
                         </div>
 
-                    </div> 
+                        </div> 
 
 
 
@@ -405,11 +488,14 @@
         </div>
     </section>
 
-    <section id="contact-link">
+    <!-- <section id="contact-link">
         <div class="contactlink">
-            <h1>Contacts<hr></h1>
+        <div class="contactlink-header">
+            <h1>Contacts</h1>
+            <hr style="height: 10px; width: 350px; margin-left: 10px; background-color: #185EA0;">
             <h2 style="margin: 40px 100px 40px 40px;">Contact Information</h2>
-<!-- SOCIAL LINK/ -->
+        </div>
+SOCIAL LINK/
             <div class="contactcontainer">
                 <div class="card email">
                     <div class="face back">
@@ -417,7 +503,7 @@
                             <div class="copy-container" style="margin-top: -40px;">
                                 <p id="email-to-copy" class="copy-text" onclick="copyText('email-to-copy')" data-tooltip="Click to Copy" >
                                     <img src="./resources/Images/Logo/REXlangnew.jpg" style="width: 25%; border-radius: 90%;">espanol.charles990@gmail.com
-                                    <!-- <i class="fas fa-copy" style="font-size: 16px; padding: 20px;">Click to Copy</i> -->
+                                    <i class="fas fa-copy" style="font-size: 16px; padding: 20px;">Click to Copy</i>
                                 </p>
                             </div>    
                         </div>
@@ -465,10 +551,10 @@
                     <div class="face back">
                         <div class="content">
                             <div class="copy-container" style="margin-top: -40px;">
-                                <!-- <a style="display: block;">Viber</a> -->
+                                <a style="display: block;">Viber</a>
                                 <p id="number1-to-copy" class="copy-text" onclick="copyText('number1-to-copy')"  data-tooltip="Click to Copy">0992-416-2028</p>
                                 <p id="number2-to-copy" class="copy-text" onclick="copyText('number2-to-copy')" data-tooltip="Click to Copy">0921-841-5534</p>
-                                <!-- <i class="fas fa-copy" style="font-size: 16px; padding: 20px;">Click to Copy</i> -->
+                                <i class="fas fa-copy" style="font-size: 16px; padding: 20px;">Click to Copy</i>
                             </div>    
                         </div>
                     </div>
@@ -476,7 +562,26 @@
                         <b><i class="fab fa-whatsapp"></i></b>
                     </div>
                 </div>
+
+                <div class="card number">
+                    <div class="face back">
+                        <div class="content">
+                            <div class="copy-container" style="margin-top: -40px;">
+                                <a style="display: block;">Viber</a>
+                                <p id="number1-to-copy" class="copy-text" onclick="copyText('number1-to-copy')"  data-tooltip="Click to Copy">0992-416-2028</p>
+                                <p id="number2-to-copy" class="copy-text" onclick="copyText('number2-to-copy')" data-tooltip="Click to Copy">0921-841-5534</p>
+                                <i class="fas fa-copy" style="font-size: 16px; padding: 20px;">Click to Copy</i>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="face front">
+                        <b><i class="fab fa-whatsapp"></i></b>
+                    </div>
+                </div>
+
             </div>
+
+            
         
             <div id="custom-alert" class="custom-alert"></div>
                 
@@ -486,7 +591,76 @@
 
 
     </div>
-</section>
+    </section> -->
+
+</div>
+<div class="contact-navbar">
+    <div class="contact-sidebar">
+        <div class="contact-menu">
+
+            <div class="contact-container">
+                <button class="contactdropdown-btn" id="email">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span class="contact-text">Emails</span>
+                    <span class="dropdown-logo">▼</span>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#" style="font-size:0.9vw;">espanol.charles990@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <button class="contactdropdown-btn" id="linkedin">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <span class="contact-text">LinkedIn</span>
+                    <!-- <span class="dropdown-logo">▼</span> -->
+                </button>
+                <!-- <div class="dropdown-container">
+                    <a href="#" style="font-size:0.9vw;">espanol.charles990@gmail.com</a>
+                </div> -->
+            </div>
+
+            <div class="contact-container">
+                <button class="contactdropdown-btn" id="social">
+                    <i class="fas fa-user-circle contact-icon"></i>
+                    <span class="contact-text">Socials</span>
+                    <span class="dropdown-logo">▼</span>
+                </button>
+                <div class="dropdown-container">
+                    <a href="https://www.facebook.com/chachu.gwapo" class="exclude-copy" target="_blank" style="font-size: 2vw;"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <button class="contactdropdown-btn" id="github">
+                    <i class="fab fa-github contact-icon"></i>
+                    <span class="contact-text">GitHub</span>
+                    <!-- <span class="dropdown-logo">▼</span> -->
+                </button>
+                <!-- <div class="dropdown-container">
+                    <a href="https://github.com/CodeRex990" target="_blank" style="font-size: 2vw;"><i class="fab fa-github"></i></a>
+                </div> -->
+            </div>
+
+            <div class="contact-container">
+                <button class="contactdropdown-btn" id="number">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span class="contact-text">Contacts</span>
+                    <span class="dropdown-logo">▼</span>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#" style="font-size: 2vw;"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#">0992-416-2028</a>
+                    <a href="#">0921-841-5534</a>
+                </div>
+            </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <script src="./scripts.js"></script>
