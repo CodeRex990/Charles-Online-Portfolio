@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.open("https://github.com/CodeRex990", "_blank");
     });
     document.getElementById("linkedin").addEventListener("click", function() {
-        window.open("https://github.com/CodeRex990", "_blank");
+        window.open("https://www.linkedin.com/in/charles-eduard-español-945230316/", "_blank");
     });
 
     var links = document.querySelectorAll('.dropdown-container a');
